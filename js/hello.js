@@ -1,6 +1,6 @@
 import React from 'react';
 
-let Hello = React.createClass({
+var Hello = React.createClass({
 
   render() {
     return(<div>Hello World!</div>);

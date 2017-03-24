@@ -1,9 +1,10 @@
 import React from 'react';
+import App from './app'
 
 var Hello = React.createClass({
 
   render() {
-    return(<div>Hello World!</div>);
+    return(<div><App/><h1>Hello World!</h1></div>);
   }
 });
 

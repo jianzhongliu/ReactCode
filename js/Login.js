@@ -1,9 +1,11 @@
 
 import React from 'react';
 
+import App from './App'
+
 var Login = React.createClass({
  render:function (){
- 	return (<h1>login</h1>);
+ 	return (<div><App/><h1>login</h1></div>);
  }
 });
 

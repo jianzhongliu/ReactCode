@@ -1,7 +1,8 @@
-import React from 'react';
+import React from 'react'
 import ReactDom from 'react-dom';
 import { Link } from 'react-router'
-var App = React.createClass({
+
+var Navigation = React.createClass({
   render() {
     return (
       <div>
@@ -12,11 +13,10 @@ var App = React.createClass({
           <li><Link to="/login">login</Link></li>
           <li><Link to="/navigation">home</Link></li>
         </ul>
+        {this.props.children}
       </div>
-    );
+    )
   }
-});
+})
 
-export default App;
-// ReactDom.render(<App />, document.getElementById('app'));
-
+export default  Navigation;

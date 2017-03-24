@@ -1,8 +1,10 @@
 
 import React from 'react'
+import App from './App'
+
 var About = React.createClass({
  render:function (){
- 	return (<h1>about</h1>);
+ 	return (<div><App/><h1>about</h1></div>);
  }
 });
 

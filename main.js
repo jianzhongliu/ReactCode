@@ -13,7 +13,7 @@ ReactDom.render((
   	<Route path="/" component={App}/>
     <Route path="/login" component={Login}/>
     <Route path="/about" component={About}/>
-    <Route path='/hello' component={Hello}/>
+    <Route path='/hello/:userName/:userPasswd' component={Hello}/>
     <route path="/navigation" component = {Navigation}/>
   </Router>
 ), document.getElementById('app'));

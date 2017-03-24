@@ -8,10 +8,10 @@ var Navigation = React.createClass({
       <div>
         <h1>React Router Tutorial</h1>
         <ul role="nav">
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/hello">hello</Link></li>
-          <li><Link to="/login">login</Link></li>
-          <li><Link to="/navigation">home</Link></li>
+          <li><Link to="/about" activeClassName="active">About</Link></li>
+          <li><Link to="/hello/gange/321321" activeStyle={{ color: 'green' }}>hello</Link></li>
+          <li><Link to="/login" activeStyle={{ color: 'yellow' }}>login</Link></li>
+          <li><Link to="/navigation" activeStyle={{ color: 'blue' }}>home</Link></li>
         </ul>
         {this.props.children}
       </div>

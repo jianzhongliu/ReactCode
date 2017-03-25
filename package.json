@@ -4,7 +4,7 @@
   "description": "webpack demo",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --progress --colors --port 3333",
+    "start": "webpack-dev-server --hot --progress --colors --port 3333 --history-api-fallback",
     "build": "webpack --progress --colors"
   },
   "repository": {

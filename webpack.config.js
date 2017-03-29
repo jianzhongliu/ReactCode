@@ -1,13 +1,15 @@
 var webpack = require('webpack');
 var HtmlwebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
     entry: [
       'webpack/hot/only-dev-server',
       "./main.js"
     ],
     output: {
-        path: './build',
-        filename: "bundle.js"
+        path: './build/js',
+        filename: "bundle.js",
+        publicPath:'./js'
     },
     module: {
         loaders: [
@@ -36,8 +38,10 @@ module.exports = {
     plugins: [
       new webpack.NoErrorsPlugin(),
       new HtmlwebpackPlugin({
-      title: 'Hello World app'
-    }),
+        title: 'My App',
+        filename: '../admin.html',
+        template:'index.html'
+      }),
       new webpack.HotModuleReplacementPlugin()
     ]
 };

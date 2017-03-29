@@ -2,6 +2,8 @@
 import React from 'react'
 import App from './App'
 
+require('../css/About.css');
+
 var About = React.createClass({
 	getInitialState:function(){
 		return {

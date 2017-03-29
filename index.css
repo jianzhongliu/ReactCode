@@ -2,16 +2,13 @@
   color: green;
 }
 
-
-
-
-
 * {
   box-sizing: border-box;
 }
 
-html, body {
+/*html, body {
   height: 100%;
+  width:100%;
 }
 
 body {
@@ -24,7 +21,7 @@ body {
   
   background: linear-gradient(top, #222, #333);
 }
-
+*/
 .login-main {
 	position: flex;
 	align-item:center;
@@ -68,7 +65,7 @@ body {
 }
 .third-face {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
   
 .third-face .pip:nth-of-type(2) {

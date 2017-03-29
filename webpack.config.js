@@ -1,5 +1,5 @@
 var webpack = require('webpack');
-
+var HtmlwebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: [
       'webpack/hot/only-dev-server',
@@ -35,6 +35,9 @@ module.exports = {
     },
     plugins: [
       new webpack.NoErrorsPlugin(),
+      new HtmlwebpackPlugin({
+      title: 'Hello World app'
+    }),
       new webpack.HotModuleReplacementPlugin()
     ]
 };

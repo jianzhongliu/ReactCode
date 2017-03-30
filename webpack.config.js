@@ -14,6 +14,7 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
+            { test: /\.(svg|woff|eot|ttf)\??.*$/,loader:'url-loader?name=assets/[name].[ext]'},
             { test: /\.css$/, loader: "style!css" },
             {test: /\.less/,loader: 'style-loader!css-loader!less-loader'},
             {
@@ -39,7 +40,7 @@ module.exports = {
       new webpack.NoErrorsPlugin(),
       new HtmlwebpackPlugin({
         title: 'My App',
-        filename: '../admin.html',
+        filename: '../index.html',
         template:'index.html'
       }),
       new webpack.HotModuleReplacementPlugin()

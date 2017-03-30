@@ -31,6 +31,11 @@ var About = React.createClass({
 					 			<div className='message'></div>
 								<div className='email'></div>
 								<div className='notifycation'></div>
+								<li>
+									<i className="iconfont icon-xiaogougou">&#xe600;</i>
+									<i className="iconfont icon-qian">&#xe601;</i>
+									<i className="iconfont icon-mimang">&#xe602;</i>
+				                </li>
 					 		</div>
 					 		<div className='list-title'></div>
 					 		<div className='list' onClick={this.listView}>

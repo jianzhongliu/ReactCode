@@ -1,0 +1,43 @@
+.login-title {
+	margin:10px;
+	margin-left: 10px;
+	overflow: hidden;
+}
+.login-login-title {
+	float: left
+}
+.login-login-register {
+	float: right;
+}
+
+.login-input {
+	margin: 0 20px;
+	overflow:hidden;
+}
+
+.login-form-item {
+	height: 40px;
+	width: 100%;
+	background-color: #353535;
+	margin: 10px auto;
+}
+
+.login-input-password {
+	width: 90%;
+	height: 40px;	
+	width: 200px;
+	background-color: red;
+}
+
+.login-form-button-box {
+	height: 45px;
+	margin: 10px 10px 0px 10px;
+	background-color: #d3d3d3;
+}
+
+.login-form-button {
+	height: 40px;
+	width: 100%;
+	text-align:center;
+	padding: 10px auto;
+}

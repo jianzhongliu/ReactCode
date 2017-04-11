@@ -7,6 +7,7 @@ import Hello from './js/Hello'
 import App from './js/app'
 import Navigation from './js/Navigation'
 import { Router, Route, hashHistory } from 'react-router'
+import Property from './js/propertyList'
 
 ReactDom.render((
   <Router history={hashHistory}>
@@ -14,6 +15,7 @@ ReactDom.render((
     <Route path="/login" component={Login}/>
     <Route path="/about" component={About}/>
     <Route path='/hello/:userName/:userPasswd' component={Hello}/>
-    <route path="/navigation" component = {Navigation}/>
+    <Route path="/navigation" component = {Navigation}/>
+    <Route path="/property" component={Property}/>
   </Router>
 ), document.getElementById('app'));

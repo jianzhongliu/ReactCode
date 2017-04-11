@@ -1,0 +1,39 @@
+.reg-form {
+	position: relative;
+	width: 100%;
+	display:inline;
+}
+
+.reg-form .input-field {
+   border-bottom: 1px solid #d8d8d8;
+}
+
+.reg-form input {
+  height: 40px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  border: 0;
+  width: calc(100% - 10px);
+}
+
+.reg-form .input-field.phone {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.reg-form .input-field.phone input {
+	flex: 1;
+	width: auto;
+}
+
+.reg-form .input-field.phone button {
+	margin-right: 20px;
+}
+
+input {
+	outline: 0px;
+
+}

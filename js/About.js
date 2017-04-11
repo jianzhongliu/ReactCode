@@ -2,6 +2,7 @@
 import React from 'react'
 import App from './App'
 
+require('../css/iconfont.css')
 require('../css/About.css');
 
 var About = React.createClass({

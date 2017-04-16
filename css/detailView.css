@@ -1,0 +1,89 @@
+.detail-content {
+    width: 20rem;
+    height: 100%;
+    margin: 0 auto;
+}
+.img-border {
+    overflow: hidden;
+    width: 20rem;
+    height: 20rem;
+    background: url('https://qiubo-dev-static2.dongpinbang.com/media/images/03/036f495ac939c6209693a7f89aa6016a98fd9e40.jpg') no-repeat center center;
+    background-repeat: no-repeat;  
+    background-position: center center;  
+    float: left;  
+    background-size:cover;
+     line-height: 40px; 
+}
+.img-border p {
+    position: relative;
+    top:calc(20rem - 40px - 30px);
+    margin-left:calc(20rem - 120px - 10px); 
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    border: 1px solid #fff;
+}
+.base-info {
+    border-bottom: 1px solid #d8d8d8;
+    line-height: 50px;
+    padding-left: 10px;    
+}
+.base-info ul li {
+    color: #606060;
+    font-size: 26px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.image-info {
+    border-bottom: 1px solid #d8d8d8;
+    line-height: 90px;
+    margin-left:20px; 
+    color: #606060;
+    font-size: 28px;
+}
+.image-view {
+    height: calc(calc((20rem - 40px - 20px)/3)*2 + 40px);
+    width: calc(20em-20px);
+    margin:10px;
+}
+.image-view img{
+    width: calc((20rem - 20px - 30px)/3);
+    height: calc((20rem - 20px - 30px)/3);
+    margin: 5px;
+}
+.check-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    height: 90px;
+    border-bottom: 1px solid #d8d8d8;
+    line-height: 90px;
+    /*overflow: hidden;*/
+}
+.check-info p {
+    font-size: 28px;
+    color: #606060;
+    width: 200px;
+}
+.check-info b {
+    color: #cc9c33;
+    font-size: 28px;
+    margin-right: 10px;
+}
+.myself-info {
+    line-height: 80px;
+    margin: 10px 10px 100px 10px;
+}
+.myself-info b {
+    font-size: 30px;
+    color: #606060;
+}
+.myself-info p {
+    line-height: 40px;
+    font-size: 28px;
+    color: #606060;
+}

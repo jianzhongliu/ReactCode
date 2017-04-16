@@ -30,7 +30,9 @@ var Login = React.createClass({
  			</div>
 
 		 <Button style={{height:'40px',width:'calc(100% - 20px)', margin:'10px',fontSize:'16px'}} type="primary" >登录</Button>
-
+		<div className='downloadFooter'>
+			 <p>58婚恋 高端的相亲app 下载app（1.24M）</p>
+		</div>
  		</div>);
  }
 });

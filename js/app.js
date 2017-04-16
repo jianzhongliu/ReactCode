@@ -12,6 +12,7 @@ var App = React.createClass({
           <li><Link to="/login" activeStyle={{ color: 'yellow' }}>login</Link></li>
           <li><Link to="/navigation" activeStyle={{ color: 'blue' }}>home</Link></li>
           <li><Link to='/property' activeStyle={{ color: 'blue' }}>property</Link></li>
+          <li><Link to='/detailView' activeStyle={{ color: 'blue' }}>detailView</Link></li>
         </ul>
       </div>
     );

@@ -1,23 +1,19 @@
 .detail-content {
-    width: 20rem;
-    height: 100%;
     margin: 0 auto;
 }
 .img-border {
-    overflow: hidden;
-    width: 20rem;
-    height: 20rem;
+    width: 100%;
+    padding-bottom: 100%;
     background: url('https://qiubo-dev-static2.dongpinbang.com/media/images/03/036f495ac939c6209693a7f89aa6016a98fd9e40.jpg') no-repeat center center;
     background-repeat: no-repeat;  
     background-position: center center;  
-    float: left;  
     background-size:cover;
-     line-height: 40px; 
+    line-height: 40px; 
+    border: 0px;
 }
 .img-border p {
-    position: relative;
-    top:calc(20rem - 40px - 30px);
-    margin-left:calc(20rem - 120px - 10px); 
+    float: right;
+    top:500px;
     width: 120px;
     height: 40px;
     border-radius: 20px;
@@ -45,14 +41,13 @@
     font-size: 28px;
 }
 .image-view {
-    height: calc(calc((20rem - 40px - 20px)/3)*2 + 40px);
-    width: calc(20em-20px);
-    margin:10px;
+    width: calc(100% - 20px);
+    margin:0 auto;
 }
 .image-view img{
-    width: calc((20rem - 20px - 30px)/3);
-    height: calc((20rem - 20px - 30px)/3);
-    margin: 5px;
+    width: 30%;
+    padding-bottom: 30%;
+    margin: calc(10%/6);
 }
 .check-info {
     display: flex;

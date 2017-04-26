@@ -2,13 +2,7 @@ import React from 'react'
 
 import PropertyCell from './propertyCell'
 
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?a08c311f6f602dc863400892a8ffcc15";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+
 
 var PropertyList = React.createClass({
 
@@ -18,7 +12,7 @@ var PropertyList = React.createClass({
 		};
 	},
 	componentDidMount:function (){
-		this.listData;		
+		this.listData();		
 	},
 	listData:function() {
 		var propertys = {
@@ -44,7 +38,7 @@ var PropertyList = React.createClass({
 
 	render:function (){
 		return (
-			<div style={{borderColor:'#d2d2d2',borderWidth:'1px',borderStyle:'solid'}} onClick={this.listData}>
+			<div onClick={this.listData}>
 				{this.state.propertyView}
 			</div>
 			);

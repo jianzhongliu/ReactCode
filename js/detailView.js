@@ -9,7 +9,7 @@ tongji:function(){
     var _hmt = _hmt || [];
     (function() {
     var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?a08c311f6f602dc863400892a8ffcc15";
+    hm.src = "https://hm.baidu.com/hm.js?7eb93374b315af8a875b56e8ce1319ea";
     var s = document.getElementsByTagName("script")[0]; 
     s.parentNode.insertBefore(hm, s);
     })();

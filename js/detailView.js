@@ -1,32 +1,64 @@
 import React from 'react'
-
+import  'whatwg-fetch'
 require ('../css/detailView.css');
 var DetailVeiw = React.createClass ({
-setTitle:function(title){
-    document.title=title;
+    getInitialState:function () {
+        return {
+            header_icon:"https://qiubo-dev-static2.dongpinbang.com/media/images/03/036f495ac939c6209693a7f89aa6016a98fd9e40.jpg",
+            user_id:'',
+            title:'58婚恋'
+        };
+    },
+    setTitle:function(title){
+        document.title=title;
+    },
+
+    tongji:function(){
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?7eb93374b315af8a875b56e8ce1319ea";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();
+    },
+
+request:function(url){
+    fetch(url)
+    .then(function(response) {
+
+        return response.json()
+    }).then(function(json) {
+
+    }).catch(function(ex) {
+        console.log('parsing failed', ex)
+    })
 },
-tongji:function(){
-    var _hmt = _hmt || [];
-    (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?7eb93374b315af8a875b56e8ce1319ea";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-    })();
+componentDidMount:function(){
+    var id = this.props.params["id"];
+    var url = 'http://localhost:2080/users/get_user_detail?user_id='+ id;
+    this.request(url);
 },
 render:function (){
+    var user_id = this.state.user_id;
+    var id = this.props.params["id"];
+    var url = 'http://localhost:2080/users/get_user_detail?user_id='+ id;
+    // this.request(url);
     this.tongji();
-    this.setTitle('58婚恋-durex的征婚帖');
+    this.setTitle(this.state.title);
     return (
         <div className='detail-content'>
             <meta name="viewport" content="width=640,initial-scale=0.5,maximum-scale=0.5, minimum-scale=0.5,user-scalable=no"/>
-            <div className='img-border'>
-                <p>浏览13980次</p>
+            <div className='img-border' style={{background: "url('"+this.state.header_icon+"') no-repeat center center",
+            backgroundRepeat: "no-repeat",  
+            backgroundPosition: "center center",  
+            backgroundSize:"cover"}}>
+                <p>{parseInt(id/45678)}</p>
             </div>
             <div className='base-info'>
                 <ul>
-                    <li style={{fontWeight:'bold',fontSize:'28px'}}>durex</li>
-                    <li>UID:9147926</li>
+                    <li style={{fontWeight:'bold',fontSize:'28px'}}>{this.state.user_name}</li>
+                    <li>UID:{id} </li>
                     <li>生活在:上海黄浦区 | 40万-60万 | 有房 | 期望半年内结婚</li>
                 </ul>
             </div>

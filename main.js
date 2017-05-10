@@ -18,6 +18,6 @@ ReactDom.render((
     <Route path='/hello/:userName/:userPasswd' component={Hello}/>
     <Route path="/navigation" component = {Navigation}/>
     <Route path="/property" component={Property}/>
-    <Route path="/detailView" component={DetailView}/>
+    <Route path="/detailView/:id" component={DetailView}/>
   </Router>
 ), document.getElementById('app'));
